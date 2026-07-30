@@ -1,5 +1,6 @@
 # Beyond the Standard Neuron in Deep Learning
 
+
 Yes. The "neuron = weighted sum + activation function" is really just the **1943 McCulloch-Pitts neuron**, which has become the standard abstraction. Modern deep learning research has explored many alternatives, although surprisingly, the simple neuron is still incredibly competitive.
 
 Think of it like this:
@@ -587,3 +588,6 @@ Nearly every "new neuron" in the literature changes one or more of these stages:
 - **Output:** always active → sparse, conditional, or expert-routed computation.
 
 Interestingly, despite decades of experimentation, the simple affine transform plus nonlinear activation remains the foundation of most state-of-the-art models. Modern breakthroughs (Transformers, attention, MoE, retrieval, diffusion models) have largely come from **changing how neurons are connected and interact**, rather than replacing the basic neuron itself. That observation is itself an important lesson: architectural organization often has a bigger impact than making an individual neuron more sophisticated.
+
+
+![alt text](image-1.png)
