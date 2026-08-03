@@ -3,8 +3,8 @@ import torch.nn as nn, torch.optim as optim
 from torchvision.datasets import MNIST
 from torchvision.transforms import ToTensor
 from torch.utils.data import DataLoader
-from models import ReLUNet,GELUNet,MaxoutNet
-from utils import count_parameters
+from Projectss.Mini_Project_Maxout_Extended.Maxout_neuron.models import ReLUNet,GELUNet,MaxoutNet
+from Projectss.Mini_Project_Maxout_Extended.Maxout_neuron.utils import count_parameters
 
 device='cuda' if torch.cuda.is_available() else 'cpu'
 train=DataLoader(MNIST('data',train=True,download=True,transform=ToTensor()),128,shuffle=True)

@@ -4,7 +4,7 @@ from sklearn.metrics import confusion_matrix,ConfusionMatrixDisplay
 from torchvision.datasets import MNIST
 from torchvision.transforms import ToTensor
 from torch.utils.data import DataLoader
-from models import MaxoutNet
+from Projectss.Mini_Project_Maxout_Extended.Maxout_neuron.models import MaxoutNet
 device='cuda' if torch.cuda.is_available() else 'cpu'
 model=MaxoutNet().to(device)
 model.load_state_dict(torch.load('saved_models/maxout.pt',map_location=device))
